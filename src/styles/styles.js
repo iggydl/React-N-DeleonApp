@@ -1,6 +1,6 @@
 import { StyleSheet } from "react-native";
 
-export const LoginStyle = StyleSheet.create({
+export const loginStyle = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: 'center',
@@ -19,13 +19,13 @@ export const LoginStyle = StyleSheet.create({
     borderWidth: 1,
     borderColor: '#ccc',
     marginBottom: 15,
-    padding: 20,
-    borderRadius: 5,
+    padding: 14,
+    borderRadius: 8,
     fontSize:18,
   },  
   loginButton: {
     width: '100%',
-    backgroundColor: '#ccc', 
+    backgroundColor: '#fff', 
     justifyContent: 'center',
     alignItems: 'center',
     borderRadius: 5,
