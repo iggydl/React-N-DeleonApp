@@ -4,13 +4,13 @@ import { View, Image, StyleSheet } from "react-native";
 const SplashScreen = ({ navigation }) => {
   useEffect(() => {
     setTimeout(() => {
-      navigation.replace("HomeScreen"); // Navigate to the home screen after 3 seconds
-    }, 5000);
+      navigation.replace("HomeScreenTwo"); // Navigate to the home screen after 3 seconds
+    }, 2000);
   }, []);
 
   return (
     <View style={styles.container}>
-      <Image source={require("../assets/bg.png")} style={styles.image} />
+      <Image source={require("../assets/PerezOptical.png")} style={styles.image} />
     </View>
   );
 };
