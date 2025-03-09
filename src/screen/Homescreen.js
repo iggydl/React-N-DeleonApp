@@ -16,6 +16,7 @@ const LoginScreen = () => {
     console.log('Username:', username);
     console.log('Password:', password);
     console.log('Confirm Password:', cpassword);
+    // on press ng user for this function uulitin mo i check if na meet ba ang minimum requirements for login or register
   };
 
   return (
@@ -27,6 +28,9 @@ const LoginScreen = () => {
 
       {/* Container for the form */}
       <View style={loginStyle.formContainer}>
+
+        {/* this is good naka condition kung ano lalabas login or register but mas maganda if nakahiwalay ang screen ng login and register. that way pag may problem login hindi madadamay yung register */}
+
         {/* Tabs for Login and Register */}
         <View style={loginStyle.tabContainer}>
           <TouchableOpacity
@@ -57,6 +61,8 @@ const LoginScreen = () => {
               value={username}
               onChangeText={setUsername}
             />
+                      {/* mas maganda if hinaharang na dito ano ang minimum requirements for password */}
+
             <TextInput
               style={loginStyle.input}
               placeholder="Password"
@@ -94,6 +100,7 @@ const LoginScreen = () => {
               value={username}
               onChangeText={setUsername}
             />
+            {/* mas maganda if hinaharang na dito ano ang minimum requirements for password */}
             <TextInput
               style={loginStyle.input}
               placeholder="Password"
@@ -110,6 +117,8 @@ const LoginScreen = () => {
               value={cpassword}
               onChangeText={setConfirmPassword}
             />
+
+            {/* bakit handleLogin function mo dito ? mas better if hiwalay sila ng function better debugging practice */}
             <TouchableOpacity style={loginStyle.loginButton} onPress={handleLogin}>
               <Text style={loginStyle.loginText}>REGISTER</Text>
             </TouchableOpacity>

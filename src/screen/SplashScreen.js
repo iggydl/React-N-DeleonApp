@@ -15,6 +15,8 @@ const SplashScreen = ({ navigation }) => {
   );
 };
 
+
+// bakit yung styles ng splashscreen mo nakahiwalay ? pwede to ilagay sa global styles mo like splashScreenContainer
 const styles = StyleSheet.create({
   container: {
     flex: 1,
